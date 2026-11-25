@@ -407,6 +407,24 @@
 			</dict>
 			<dict>
 				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>Ath10kMac.kext</string>
+				<key>Comment</key>
+				<string>Ath10kMac.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/Ath10kMac</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VirtualSMC.kext</string>
@@ -686,6 +704,42 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/SMCLightSensor</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>BlueToolFixup.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BlueToolFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>QCABluetoothFirmware.kext</string>
+				<key>Comment</key>
+				<string>QCABluetoothFirmware</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/QCABluetoothFirmware</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1756,8 +1810,18 @@
 				<data>
 				Rg==
 				</data>
+				<key>bluetoothExternalDongleFailed</key>
+				<data>
+				AA==
+				</data>
+				<key>bluetoothHostControllerSwitchBehavior</key>
+				<string>always</string>
+				<key>bluetoothInternalControllerInfo</key>
+				<data>
+				AAAAAAAAAAAAAAAAAAA=
+				</data>
 				<key>boot-args</key>
-				<string>-no_compat_check alcid=71</string>
+				<string>-no_compat_check alcid=71 -btlfxboardid -btlfxallowanyaddr</string>
 				<key>csr-active-config</key>
 				<data>
 				AAAAAA==
@@ -1782,6 +1846,8 @@
 			<array>
 				<string>boot-args</string>
 				<string>ForceDisplayRotationInEFI</string>
+				<string>bluetoothExternalDongleFailed</string>
+				<string>bluetoothHostControllerSwitchBehavior</string>
 			</array>
 		</dict>
 		<key>LegacyOverwrite</key>
